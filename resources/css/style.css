@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+body * {
+  box-sizing: border-box; }
+
+html, body {
+  background: #404040;
+  color: #DDD;
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+.window {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin: 0 auto; }
+  .window .chat {
+    flex-grow: 1;
+    height: 100%;
+    width: 16%;
+    float: left;
+    padding: 0;
+    margin: 0 5px; }
+    .window .chat .innerWrapper {
+      background: #4d4d4d;
+      height: 100%; }
+      .window .chat .innerWrapper .channelName {
+        border-bottom: 1px solid #333;
+        font-weight: 300;
+        padding: 10px 0;
+        margin: 0;
+        text-align: center; }
+      .window .chat .innerWrapper .messageContainer {
+        padding: 5px; }
+        .window .chat .innerWrapper .messageContainer .twitch-message {
+          margin: 10px 0; }
+          .window .chat .innerWrapper .messageContainer .twitch-message .twitch-username {
+            font-weight: 600; }
+
+/*# sourceMappingURL=style.css.map */

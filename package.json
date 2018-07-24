@@ -1,0 +1,32 @@
+{
+  "name": "twitch-moderator-system",
+  "version": "0.1.0",
+  "description": "A tool allowing the user to moderate more than one twitch channel at a time",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jogger71/Twitch-Moderating-System.git"
+  },
+  "keywords": [
+    "Twitch",
+    "Moderator"
+  ],
+  "author": "Jogger71",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Jogger71/Twitch-Moderating-System/issues"
+  },
+  "homepage": "https://github.com/Jogger71/Twitch-Moderating-System#readme",
+  "devDependencies": {
+    "electron": "^2.0.5",
+    "tmi.js": "^1.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "jquery": "^3.3.1"
+  }
+}
