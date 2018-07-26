@@ -8,13 +8,20 @@ let commandPrefix = '!';
 
 const Chat = require('./models/chat');
 
+const channelOne = "#giraffe_monster";
+const channelTwo = "";
+const channelThree = "";
+const channelFour = "";
+const channelFive = "";
+const channelSix = "";
+
 //  Create the chats
-const chatOne = new Chat(1);
-const chatTwo = new Chat(2);
-const chatThree = new Chat(3);
-const chatFour = new Chat(4);
-const chatFive = new Chat(5);
-const chatSix = new Chat(6);
+const chatOne = new Chat(1, channelOne);
+const chatTwo = new Chat(2, channelTwo);
+const chatThree = new Chat(3, channelThree);
+const chatFour = new Chat(4, channelFour);
+const chatFive = new Chat(5, channelFive);
+const chatSix = new Chat(6, channelSix);
 
 let options = {
   options: {
@@ -32,16 +39,16 @@ let client = new tmi.client(options);
 //  Add the handlers
 client.on('message', onMessageHandler);
 
-let channelOneName = '#jogger71';
-let channelTwoName = '#joggerthelurklord';
-let channelThreeName = '#noobsliceza';
+//let channelOneName = '#jogger71';
+//let channelTwoName = '#joggerthelurklord';
+//let channelThreeName = '#noobsliceza';
 
 //  Connect to Twitch
 client.connect().then(function (data) {
   console.log('connected');
   console.log(data, 'Connection data');
-  client.join(channelOneName);
-  chatOne.setChannelName(channelOneName);
+  client.join(channelOne);
+  chatOne.setChannelName(channelOne);
   client.join('#joggerthelurklord');
   chatTwo.setChannelName('#joggerthelurklord');
   client.join(channelThreeName);

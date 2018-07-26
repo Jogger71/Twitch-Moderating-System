@@ -1,0 +1,11 @@
+.video {
+  align-items: stretch;
+  background: #000;
+  border: 1px solid #CCC;
+  flex-grow: 1;
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -21,7 +21,7 @@ Chat.prototype.getChannelName = function() {
 
 Chat.prototype.updateChannelName = function() {
   if (this.chatWrapper !== null) {
-    this.chatWrapper.find('.channelName').text(this.getChannelName());
+    this.chatWrapper.find('.channel-name').text(this.getChannelName());
   }
 };
 
@@ -65,7 +65,7 @@ Chat.prototype.createMessage = function(messageText, context) {
 
 Chat.prototype.addMessage = function(message) {
   if (this.chatWrapper !== null) {
-    this.chatWrapper.find('.messageContainer').append(message);
+    this.chatWrapper.find('.message-container').append(message);
   }
 };
 

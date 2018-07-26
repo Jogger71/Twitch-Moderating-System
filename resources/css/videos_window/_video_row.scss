@@ -1,0 +1,8 @@
+.video-row {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+
+  @import 'video';
+}

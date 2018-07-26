@@ -10,17 +10,22 @@ let chatsWindow;
 let videosWindow;
 let configWindow;
 
+const debugging = false;
+
 /**
  * Creates our windows
  */
 function createWindow() {
   //  Setup the chats window
   chatsWindow = new BrowserWindow({});
-  chatsWindow.toggleDevTools();
   chatsWindow.loadURL(fileUrl('chatsWindow.html'));
   videosWindow = new BrowserWindow({});
-  videosWindow.toggleDevTools();
   videosWindow.loadURL(fileUrl('videosWindow.html'));
+
+  if (debugging) {
+    chatsWindow.toggleDevTools();
+    videosWindow.toggleDevTools();
+  }
 
   //  Close application when either of the two windows are closed
   chatsWindow.on('closed', closeApplication);
