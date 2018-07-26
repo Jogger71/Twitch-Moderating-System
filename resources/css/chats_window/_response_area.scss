@@ -1,0 +1,7 @@
+.response-area {
+  flex-basis: 0;
+  flex-shrink: 1;
+  padding-bottom: 10px;
+
+  @import "response_message";
+}

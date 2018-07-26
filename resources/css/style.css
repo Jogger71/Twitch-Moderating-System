@@ -1,44 +1,70 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 body * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+}
 
 html, body {
-  background: #404040;
+  background: #525252;
   color: #DDD;
-  font-family: 'Source Code Pro', sans-serif;
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 14px;
   font-weight: 300;
+  line-height: 18px;
   width: 100%;
   height: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
-.window {
-  align-items: stretch;
+.chats-window {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   height: 100%;
-  margin: 0 auto; }
-  .window .chat {
-    flex-grow: 1;
-    height: 100%;
-    width: 16%;
-    float: left;
-    padding: 0;
-    margin: 0 5px; }
-    .window .chat .innerWrapper {
-      background: #4d4d4d;
-      height: 100%; }
-      .window .chat .innerWrapper .channelName {
-        border-bottom: 1px solid #333;
-        font-weight: 300;
-        padding: 10px 0;
-        margin: 0;
-        text-align: center; }
-      .window .chat .innerWrapper .messageContainer {
-        padding: 5px; }
-        .window .chat .innerWrapper .messageContainer .twitch-message {
-          margin: 10px 0; }
-          .window .chat .innerWrapper .messageContainer .twitch-message .twitch-username {
-            font-weight: 600; }
+  width: 100%;
+}
+.chats-window .chat {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  height: 100%;
+  float: left;
+  padding: 0;
+  margin: 0 5px;
+  width: 16%;
+}
+.chats-window .chat .channel-name {
+  border-bottom: 1px solid #333;
+  flex-basis: 30px;
+  flex-shrink: 1;
+  font-weight: 300;
+  padding: 10px 0;
+  margin: 0;
+  text-align: center;
+}
+.chats-window .chat .message-container {
+  flex-grow: 1;
+  padding: 5px;
+}
+.chats-window .chat .message-container .twitch-message {
+  margin: 10px 0;
+}
+.chats-window .chat .message-container .twitch-message .twitch-username {
+  font-weight: 600;
+}
+.chats-window .chat .response-area {
+  flex-basis: 0;
+  flex-shrink: 1;
+  padding-bottom: 10px;
+}
+.chats-window .chat .response-area .response-message {
+  background: none;
+  border: 2px solid white;
+  min-height: 54px;
+  padding: 5px;
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */

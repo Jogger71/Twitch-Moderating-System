@@ -1,0 +1,10 @@
+.chats-window {
+  //align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+
+  @import 'chat';
+}
